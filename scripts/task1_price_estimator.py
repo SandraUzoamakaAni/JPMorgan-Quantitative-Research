@@ -16,7 +16,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-CSV_PATH = "Nat_Gas.csv"  # update path if needed
+CSV_PATH = "data/Nat_Gas.csv"  # update path if needed
 
 df = pd.read_csv(CSV_PATH)
 df["Dates"] = pd.to_datetime(df["Dates"], format="%m/%d/%y")
@@ -64,5 +64,5 @@ if __name__ == "__main__":
     plt.legend()
     plt.grid(alpha=0.3)
     plt.tight_layout()
-    plt.savefig("nat_gas_price_forecast.png", dpi=150)
+    plt.savefig("results/nat_gas_price_forecast.png", dpi=150)
     plt.show()
