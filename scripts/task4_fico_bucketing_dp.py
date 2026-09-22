@@ -6,7 +6,7 @@ Bucket FICO Scores via Dynamic Programming (log-likelihood optimal)
 import pandas as pd
 import numpy as np
 
-CSV_PATH = "Task_3_and_4_Loan_Data.csv"
+CSV_PATH = "data/Task_3_and_4_Loan_Data.csv"
 
 
 def fit_fico_buckets(fico_scores, defaults, num_buckets):
