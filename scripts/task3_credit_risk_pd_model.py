@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import roc_auc_score, accuracy_score, confusion_matrix
 
-CSV_PATH = "Task_3_and_4_Loan_Data.csv"
+CSV_PATH = "data/Task_3_and_4_Loan_Data.csv"
 RECOVERY_RATE = 0.10
 FEATURES = [
     "credit_lines_outstanding",
